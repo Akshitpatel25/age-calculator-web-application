@@ -1,0 +1,371 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* this is for removing arrow from inout number  */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(240, 240, 240);
+    max-width: 1224px;
+    /* border: 2px solid black; */
+    margin: auto;
+    height: fit-content;
+    /* padding: 20px;    */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+}
+.box {
+    width: 50%;
+    min-width: 293px;
+    height: fit-content;
+    /* border: 2px solid black; */
+    /* margin: auto; */
+    background-color: white;
+    border-radius: 20px;
+    border-bottom-right-radius: 150px;
+    padding: 30px;
+}
+.box_area1 {
+    width: 80%;
+    height: fit-content;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: space-between;
+}
+.day {
+    width: 33%;
+    height: 100%;
+    /* border: 1px solid red; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.day_h5{
+    color: #717171;
+}
+.input_box1 {
+    width: 80%;
+    text-align: center;
+    margin: 5px 0px;
+    border-radius: 10px;
+    /* height: 50%; */
+    font-size: 30px;
+    font-weight: bolder;
+    border: 2px solid;
+    border-color: lightgray;
+    padding: 15px;
+}
+.d_p {
+    color: red;
+    display: none;
+    font-size: 14px;
+}
+
+.day_p {
+    color: red;
+    display: none;
+}
+
+.month {
+    width: 33%;
+    height: 100%;
+    /* border: 1px solid red; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.month h5 {
+    color: #717171;
+}
+.m_p {
+    color: red;
+    display: none;
+    font-size: 14px;
+}
+.month_p {
+    color: red;
+    display: none;
+}
+.input_box2 {
+    width: 80%;
+    text-align: center;
+    margin: 5px 0px;
+    border-radius: 10px;
+    /* height: 50%; */
+    font-size: 30px;
+    font-weight: bolder;
+    border: 2px solid;
+    border-color: lightgray;
+    padding: 15px;
+}
+
+.year {
+    width: 33%;
+    height: 100%;
+    /* border: 1px solid red; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.year h5 {
+    color: #717171;
+}
+.y_p {
+    color: red;
+    display: none;
+    font-size: 14px;
+}
+.year_p {
+    color: red;
+    display: none;
+}
+.input_box3 {
+    width: 80%;
+    text-align: center;
+    margin: 5px 0px;
+    border-radius: 10px;
+    /* height: 50%; */
+    font-size: 30px;
+    font-weight: bolder;
+    border: 2px solid;
+    border-color: lightgray;
+    padding: 15px;
+}
+
+.box_area2 {
+    width: 100%;
+    /* border: 2px solid black; */
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.line {
+    width: 100%;
+    border: 1px solid rgb(187, 187, 187);
+}
+.circle {
+    width: 80px;
+    height: 100%;
+    border-radius: 50%;
+    /* border: 1px solid black; */
+    background-color: #864cff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+}
+.imgg {
+    width: 35px;
+    height: 35px;
+}
+
+.box_area3 {
+    width: 100%;
+    height: fit-content;
+    /* border: 2px solid black; */
+    /* padding-top: 20px; */
+    font-family:Arial, Helvetica, sans-serif;
+    font-style: italic;
+}
+.years {
+    width: 100%;
+    padding-left: 20px;
+}
+.years h4 {
+    font-size: 100px;
+}
+.span_years {
+    color: #864cff;
+    padding-right: 10px;
+}
+.months {
+    width: 100%;
+    padding-left: 20px;
+}
+.months h4 {
+    font-size: 100px;
+}
+.span_months {
+    color: #864cff;
+    padding-right: 10px;
+}
+
+.days {
+    width: 100%;
+    padding-left: 20px;
+}
+.days h4 {
+    font-size: 100px;
+}
+.span_days {
+    color: #864cff;
+    padding-right: 10px;
+}
+
+
+
+/* tablet view */
+
+@media (max-width: 1133px) {
+    body {
+        margin-top: 100px;
+    }
+    .box {
+        width: 60%;
+        padding: 20px;
+        border-bottom-right-radius: 100px;
+    }
+    .box_area1 {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .input_box1 {
+        font-size: 20px;
+        height: 50px;
+    }
+    .input_box2 {
+        font-size: 20px;
+        height: 50px;
+    }
+    .input_box3 {
+        font-size: 20px;
+        height: 50px;
+    }
+    .day_p {
+        font-size: 10px;
+    }
+    .month_p {
+        font-size: 10px;
+    }
+    .circle {
+        position: absolute;
+        height: 70px;
+        width: 70px;
+    }
+    .years {
+        width: 100%;
+        padding-left: 20px;
+    }
+    .years h4 {
+        font-size: 60px;
+    }
+    .months h4 {
+        font-size: 60px;
+    }
+    .days h4 {
+        font-size: 60px;
+    }
+}
+
+/* mobile view */
+
+@media (max-width: 600px) {
+    body {
+        margin-top: 150px;
+    }
+    .box {
+        width: 100%;
+        padding: 20px;
+        border-bottom-right-radius: 100px;
+    }
+    .box_area1 {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .input_box1 {
+        font-size: 20px;
+        height: 50px;
+    }
+    .input_box2 {
+        font-size: 20px;
+        height: 50px;
+    }
+    .input_box3 {
+        font-size: 20px;
+        height: 50px;
+    }
+    .day_p {
+        font-size: 10px;
+    }
+    .month_p {
+        font-size: 10px;
+    }
+    .circle {
+        position: absolute;
+        height: 70px;
+        width: 70px;
+    }
+    .years {
+        width: 100%;
+        padding-left: 20px;
+    }
+    .years h4 {
+        font-size: 60px;
+    }
+    .months h4 {
+        font-size: 60px;
+    }
+    .days h4 {
+        font-size: 60px;
+    }
+}
+
+/* fold view */
+
+@media (max-width: 333px) {
+    body {
+        margin-top: 150px;
+    }
+    .box {
+        width: 100%;
+        padding: 20px;
+        border-bottom-right-radius: 100px;
+    }
+    .box_area1 {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .input_box1 {
+        font-size: 12px;
+        height: 40px;
+    }
+    .input_box2 {
+        font-size: 12px;
+        height: 40px;
+    }
+    .input_box3 {
+        font-size: 12px;
+        height: 40px;
+    }
+    .day_p {
+        font-size: 10px;
+    }
+    .month_p {
+        font-size: 10px;
+    }
+    .circle {
+        position: absolute;
+        height: 70px;
+        width: 70px;
+    }
+    .years {
+        width: 100%;
+        padding-left: 20px;
+    }
+    .years h4 {
+        font-size: 30px;
+    }
+    .months h4 {
+        font-size: 30px;
+    }
+    .days h4 {
+        font-size: 30px;
+    }
+}
+
